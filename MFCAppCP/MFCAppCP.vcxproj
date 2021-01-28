@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{6B3B0ADD-EB0D-4886-858C-E8E4EB54374D}</ProjectGuid>
+    <Keyword>MFCProj</Keyword>
+    <RootNamespace>MFCAppCP</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;CURL_STATICLIB;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalDependencies>crypt32.lib;ws2_32.lib;wldap32.lib;nafxcwd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\THEngine\http\curl\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>msvcrt.lib;LIBCMT.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Manifest>
+      <AdditionalManifestFiles>XPStyle.manifest</AdditionalManifestFiles>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\THEngine\CxImage\xfile.h" />
+    <ClInclude Include="..\THEngine\CxImage\ximabmp.h" />
+    <ClInclude Include="..\THEngine\CxImage\ximacfg.h" />
+    <ClInclude Include="..\THEngine\CxImage\ximadef.h" />
+    <ClInclude Include="..\THEngine\CxImage\ximage.h" />
+    <ClInclude Include="..\THEngine\CxImage\ximagif.h" />
+    <ClInclude Include="..\THEngine\CxImage\ximaico.h" />
+    <ClInclude Include="..\THEngine\CxImage\ximaiter.h" />
+    <ClInclude Include="..\THEngine\CxImage\ximaj2k.h" />
+    <ClInclude Include="..\THEngine\CxImage\ximajas.h" />
+    <ClInclude Include="..\THEngine\CxImage\ximajbg.h" />
+    <ClInclude Include="..\THEngine\CxImage\ximajpg.h" />
+    <ClInclude Include="..\THEngine\CxImage\ximamng.h" />
+    <ClInclude Include="..\THEngine\CxImage\ximapcx.h" />
+    <ClInclude Include="..\THEngine\CxImage\ximapng.h" />
+    <ClInclude Include="..\THEngine\CxImage\ximatga.h" />
+    <ClInclude Include="..\THEngine\CxImage\ximath.h" />
+    <ClInclude Include="..\THEngine\CxImage\ximatif.h" />
+    <ClInclude Include="..\THEngine\CxImage\ximawbmp.h" />
+    <ClInclude Include="..\THEngine\CxImage\ximawmf.h" />
+    <ClInclude Include="..\THEngine\CxImage\xiofile.h" />
+    <ClInclude Include="..\THEngine\CxImage\xmemfile.h" />
+    <ClInclude Include="..\THEngine\drawtext.h" />
+    <ClInclude Include="..\THEngine\http\curl\curl.h" />
+    <ClInclude Include="..\THEngine\http\curl\curlbuild.h" />
+    <ClInclude Include="..\THEngine\http\curl\curlrules.h" />
+    <ClInclude Include="..\THEngine\http\curl\curlver.h" />
+    <ClInclude Include="..\THEngine\http\curl\easy.h" />
+    <ClInclude Include="..\THEngine\http\curl\mprintf.h" />
+    <ClInclude Include="..\THEngine\http\curl\multi.h" />
+    <ClInclude Include="..\THEngine\http\curl\stdcheaders.h" />
+    <ClInclude Include="..\THEngine\http\curl\typecheck-gcc.h" />
+    <ClInclude Include="..\THEngine\http\HttpClient.h" />
+    <ClInclude Include="..\THEngine\http\HttpCookie.h" />
+    <ClInclude Include="..\THEngine\http\HttpRequest.h" />
+    <ClInclude Include="..\THEngine\http\HttpResponse.h" />
+    <ClInclude Include="..\THEngine\http\thHttpManage.h" />
+    <ClInclude Include="..\THEngine\IDXDefines.h" />
+    <ClInclude Include="..\THEngine\json\allocators.h" />
+    <ClInclude Include="..\THEngine\json\document.h" />
+    <ClInclude Include="..\THEngine\json\encodedstream.h" />
+    <ClInclude Include="..\THEngine\json\encodings.h" />
+    <ClInclude Include="..\THEngine\json\error\en.h" />
+    <ClInclude Include="..\THEngine\json\error\error.h" />
+    <ClInclude Include="..\THEngine\json\filereadstream.h" />
+    <ClInclude Include="..\THEngine\json\filestream.h" />
+    <ClInclude Include="..\THEngine\json\filewritestream.h" />
+    <ClInclude Include="..\THEngine\json\internal\biginteger.h" />
+    <ClInclude Include="..\THEngine\json\internal\diyfp.h" />
+    <ClInclude Include="..\THEngine\json\internal\dtoa.h" />
+    <ClInclude Include="..\THEngine\json\internal\ieee754.h" />
+    <ClInclude Include="..\THEngine\json\internal\itoa.h" />
+    <ClInclude Include="..\THEngine\json\internal\meta.h" />
+    <ClInclude Include="..\THEngine\json\internal\pow10.h" />
+    <ClInclude Include="..\THEngine\json\internal\stack.h" />
+    <ClInclude Include="..\THEngine\json\internal\strfunc.h" />
+    <ClInclude Include="..\THEngine\json\internal\strtod.h" />
+    <ClInclude Include="..\THEngine\json\memorybuffer.h" />
+    <ClInclude Include="..\THEngine\json\memorystream.h" />
+    <ClInclude Include="..\THEngine\json\msinttypes\inttypes.h" />
+    <ClInclude Include="..\THEngine\json\msinttypes\stdint.h" />
+    <ClInclude Include="..\THEngine\json\prettywriter.h" />
+    <ClInclude Include="..\THEngine\json\rapidjson.h" />
+    <ClInclude Include="..\THEngine\json\reader.h" />
+    <ClInclude Include="..\THEngine\json\stringbuffer.h" />
+    <ClInclude Include="..\THEngine\json\writer.h" />
+    <ClInclude Include="..\THEngine\lua\bind\thscript_allocator.h" />
+    <ClInclude Include="..\THEngine\lua\bind\thscript_autoreleasePool.h" />
+    <ClInclude Include="..\THEngine\lua\bind\thscript_bind.h" />
+    <ClInclude Include="..\THEngine\lua\bind\thscript_dec.h" />
+    <ClInclude Include="..\THEngine\lua\bind\thscript_luaBasicConversions.h" />
+    <ClInclude Include="..\THEngine\lua\bind\thscript_luaEngine.h" />
+    <ClInclude Include="..\THEngine\lua\bind\thscript_luaStack.h" />
+    <ClInclude Include="..\THEngine\lua\bind\thscript_luaValue.h" />
+    <ClInclude Include="..\THEngine\lua\bind\thscript_objref.h" />
+    <ClInclude Include="..\THEngine\lua\bind\thscript_toluafix.h" />
+    <ClInclude Include="..\THEngine\lua\bind\thscript_value.h" />
+    <ClInclude Include="..\THEngine\lua\cjson\fpconv.h" />
+    <ClInclude Include="..\THEngine\lua\cjson\lua_cjson.h" />
+    <ClInclude Include="..\THEngine\lua\cjson\strbuf.h" />
+    <ClInclude Include="..\THEngine\lua\lua\lapi.h" />
+    <ClInclude Include="..\THEngine\lua\lua\lauxlib.h" />
+    <ClInclude Include="..\THEngine\lua\lua\lcode.h" />
+    <ClInclude Include="..\THEngine\lua\lua\ldebug.h" />
+    <ClInclude Include="..\THEngine\lua\lua\ldo.h" />
+    <ClInclude Include="..\THEngine\lua\lua\lfunc.h" />
+    <ClInclude Include="..\THEngine\lua\lua\lgc.h" />
+    <ClInclude Include="..\THEngine\lua\lua\llex.h" />
+    <ClInclude Include="..\THEngine\lua\lua\llimits.h" />
+    <ClInclude Include="..\THEngine\lua\lua\lmem.h" />
+    <ClInclude Include="..\THEngine\lua\lua\lobject.h" />
+    <ClInclude Include="..\THEngine\lua\lua\lopcodes.h" />
+    <ClInclude Include="..\THEngine\lua\lua\lparser.h" />
+    <ClInclude Include="..\THEngine\lua\lua\lstate.h" />
+    <ClInclude Include="..\THEngine\lua\lua\lstring.h" />
+    <ClInclude Include="..\THEngine\lua\lua\ltable.h" />
+    <ClInclude Include="..\THEngine\lua\lua\ltm.h" />
+    <ClInclude Include="..\THEngine\lua\lua\lua.h" />
+    <ClInclude Include="..\THEngine\lua\lua\luaconf.h" />
+    <ClInclude Include="..\THEngine\lua\lua\lualib.h" />
+    <ClInclude Include="..\THEngine\lua\lua\lundump.h" />
+    <ClInclude Include="..\THEngine\lua\lua\lvm.h" />
+    <ClInclude Include="..\THEngine\lua\lua\lzio.h" />
+    <ClInclude Include="..\THEngine\lua\tolua\tolua++.h" />
+    <ClInclude Include="..\THEngine\lua\tolua\tolua_event.h" />
+    <ClInclude Include="..\THEngine\lua\xxtea\xxtea.h" />
+    <ClInclude Include="..\THEngine\mfc\thMFCComboBox.h" />
+    <ClInclude Include="..\THEngine\mfc\thMFCEdit.h" />
+    <ClInclude Include="..\THEngine\mfc\thMFCHeader.h" />
+    <ClInclude Include="..\THEngine\mfc\thMFCListCtrl.h" />
+    <ClInclude Include="..\THEngine\mfc\thMFCManager.h" />
+    <ClInclude Include="..\THEngine\mfc\thMFCStatic.h" />
+    <ClInclude Include="..\THEngine\SkinPPWTL.h" />
+    <ClInclude Include="..\THEngine\thCaiPiao.h" />
+    <ClInclude Include="..\THEngine\THDefine.h" />
+    <ClInclude Include="..\THEngine\thHelper.h" />
+    <ClInclude Include="..\THEngine\thread\thServiceThread.h" />
+    <ClInclude Include="..\THEngine\thStruct.h" />
+    <ClInclude Include="..\THEngine\thUtility.h" />
+    <ClInclude Include="..\THEngine\vld\vld.h" />
+    <ClInclude Include="..\THEngine\vld\vldapi.h" />
+    <ClInclude Include="..\THEngine\web\explorer_url1.h" />
+    <ClInclude Include="COCX.h" />
+    <ClInclude Include="framework.h" />
+    <ClInclude Include="MFCAppCP.h" />
+    <ClInclude Include="MFCAppCPDlg.h" />
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\THEngine\drawtext.cpp" />
+    <ClCompile Include="..\THEngine\http\HttpClient.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\http\HttpCookie.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\http\thHttpManage.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\lua\bind\thscript_allocator.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\lua\bind\thscript_autoreleasePool.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\lua\bind\thscript_dec.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\lua\bind\thscript_luaBasicConversions.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\lua\bind\thscript_luaEngine.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\lua\bind\thscript_luaStack.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\lua\bind\thscript_luaValue.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\lua\bind\thscript_objref.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\lua\bind\thscript_toluafix.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\lua\bind\thscript_value.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\lua\cjson\fpconv.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\lua\cjson\lua_cjson.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\lua\cjson\strbuf.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\lua\lua\lapi.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\lua\lua\lauxlib.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\lua\lua\lbaselib.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\lua\lua\lcode.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\lua\lua\ldblib.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\lua\lua\ldebug.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\lua\lua\ldo.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\lua\lua\ldump.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\lua\lua\lfunc.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\lua\lua\lgc.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\lua\lua\linit.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\lua\lua\liolib.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\lua\lua\llex.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\lua\lua\lmathlib.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\lua\lua\lmem.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\lua\lua\loadlib.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\lua\lua\lobject.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\lua\lua\lopcodes.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\lua\lua\loslib.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\lua\lua\lparser.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\lua\lua\lstate.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\lua\lua\lstring.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\lua\lua\lstrlib.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\lua\lua\ltable.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\lua\lua\ltablib.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\lua\lua\ltm.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\lua\lua\lua.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\lua\lua\lundump.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\lua\lua\lvm.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\lua\lua\lzio.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\lua\lua\print.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\lua\tolua\tolua_event.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\lua\tolua\tolua_is.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\lua\tolua\tolua_map.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\lua\tolua\tolua_push.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\lua\tolua\tolua_to.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\lua\xxtea\xxtea.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\mfc\thMFCComboBox.cpp" />
+    <ClCompile Include="..\THEngine\mfc\thMFCEdit.cpp" />
+    <ClCompile Include="..\THEngine\mfc\thMFCListCtrl.cpp" />
+    <ClCompile Include="..\THEngine\mfc\thMFCManager.cpp" />
+    <ClCompile Include="..\THEngine\mfc\thMFCStatic.cpp" />
+    <ClCompile Include="..\THEngine\thCaiPiao.cpp" />
+    <ClCompile Include="..\THEngine\thHelper.cpp" />
+    <ClCompile Include="..\THEngine\thread\thServiceThread.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\web\explorer_url1.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="COCX.cpp" />
+    <ClCompile Include="MFCAppCP.cpp" />
+    <ClCompile Include="MFCAppCPDlg.cpp" />
+    <ClCompile Include="pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="MFCAppCP.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\THEngine\http\curl\Makefile.am" />
+    <None Include="..\THEngine\http\curl\Makefile.in" />
+    <None Include="..\THEngine\lua\bind\thscript_bind.inl" />
+    <None Include="..\THEngine\thUtility.inl" />
+    <None Include="res\MFCAppCP.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\MFCAppCP.ico" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

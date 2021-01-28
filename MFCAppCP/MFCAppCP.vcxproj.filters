@@ -1,0 +1,690 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="THEngine">
+      <UniqueIdentifier>{34d9a960-90ee-44ca-80d2-8c7825c6f542}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="THEngine\CxImage">
+      <UniqueIdentifier>{8a6fe1e0-367a-4f2f-bdd3-8e70b2e5578a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="THEngine\http">
+      <UniqueIdentifier>{c469a523-0a2e-4706-9ca4-1976306e52a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="THEngine\json">
+      <UniqueIdentifier>{069b9a06-6b6c-4f7d-ad14-221179775c63}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="THEngine\thread">
+      <UniqueIdentifier>{64fa8005-012f-413e-8583-efacf49fc41b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="THEngine\vld">
+      <UniqueIdentifier>{e89867a3-a44a-4cc6-a3ec-0098feefa6fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="THEngine\lua">
+      <UniqueIdentifier>{d7a7fa2f-5ef6-45ab-b4ac-3350363f3107}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="THEngine\lua\bind">
+      <UniqueIdentifier>{90642354-8c03-43b7-8104-53828ec1fd38}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="THEngine\lua\lua">
+      <UniqueIdentifier>{553bf8c3-ef3c-4d66-9e10-406663a4b2c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="THEngine\lua\tolua">
+      <UniqueIdentifier>{c4b40051-391d-441e-9b2d-49715368e53a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="THEngine\lua\xxtea">
+      <UniqueIdentifier>{c26a227e-a6e3-4e0c-be2a-af13d68dce45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="THEngine\http\curl">
+      <UniqueIdentifier>{5960ab63-7a0a-446d-9caa-d94b2c0ee4ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="THEngine\json\error">
+      <UniqueIdentifier>{e0546cc8-9f11-469f-a055-c3795933d763}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="THEngine\json\internal">
+      <UniqueIdentifier>{b2b1bf09-9395-47a3-944a-ca7f84397319}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="THEngine\json\msinttypes">
+      <UniqueIdentifier>{82302263-b4bc-4117-a64d-0ffc84f0ad04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="THEngine\lua\cjson">
+      <UniqueIdentifier>{2fda5921-e995-4332-8112-84eba7c6a3fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="THEngine\web">
+      <UniqueIdentifier>{14df65c9-2f9d-4350-b5ab-0d67f43b9e2a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="THEngine\mfc">
+      <UniqueIdentifier>{13667297-c0d0-4d27-aca5-ff95a595387f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MFCAppCP.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MFCAppCPDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="framework.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\CxImage\xfile.h">
+      <Filter>THEngine\CxImage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\CxImage\ximabmp.h">
+      <Filter>THEngine\CxImage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\CxImage\ximacfg.h">
+      <Filter>THEngine\CxImage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\CxImage\ximadef.h">
+      <Filter>THEngine\CxImage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\CxImage\ximage.h">
+      <Filter>THEngine\CxImage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\CxImage\ximagif.h">
+      <Filter>THEngine\CxImage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\CxImage\ximaico.h">
+      <Filter>THEngine\CxImage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\CxImage\ximaiter.h">
+      <Filter>THEngine\CxImage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\CxImage\ximaj2k.h">
+      <Filter>THEngine\CxImage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\CxImage\ximajas.h">
+      <Filter>THEngine\CxImage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\CxImage\ximajbg.h">
+      <Filter>THEngine\CxImage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\CxImage\ximajpg.h">
+      <Filter>THEngine\CxImage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\CxImage\ximamng.h">
+      <Filter>THEngine\CxImage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\CxImage\ximapcx.h">
+      <Filter>THEngine\CxImage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\CxImage\ximapng.h">
+      <Filter>THEngine\CxImage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\CxImage\ximatga.h">
+      <Filter>THEngine\CxImage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\CxImage\ximath.h">
+      <Filter>THEngine\CxImage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\CxImage\ximatif.h">
+      <Filter>THEngine\CxImage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\CxImage\ximawbmp.h">
+      <Filter>THEngine\CxImage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\CxImage\ximawmf.h">
+      <Filter>THEngine\CxImage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\CxImage\xiofile.h">
+      <Filter>THEngine\CxImage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\CxImage\xmemfile.h">
+      <Filter>THEngine\CxImage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\http\HttpClient.h">
+      <Filter>THEngine\http</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\http\HttpCookie.h">
+      <Filter>THEngine\http</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\http\HttpRequest.h">
+      <Filter>THEngine\http</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\http\HttpResponse.h">
+      <Filter>THEngine\http</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\http\curl\curl.h">
+      <Filter>THEngine\http\curl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\http\curl\curlbuild.h">
+      <Filter>THEngine\http\curl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\http\curl\curlrules.h">
+      <Filter>THEngine\http\curl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\http\curl\curlver.h">
+      <Filter>THEngine\http\curl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\http\curl\easy.h">
+      <Filter>THEngine\http\curl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\http\curl\mprintf.h">
+      <Filter>THEngine\http\curl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\http\curl\multi.h">
+      <Filter>THEngine\http\curl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\http\curl\stdcheaders.h">
+      <Filter>THEngine\http\curl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\http\curl\typecheck-gcc.h">
+      <Filter>THEngine\http\curl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\json\allocators.h">
+      <Filter>THEngine\json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\json\document.h">
+      <Filter>THEngine\json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\json\encodedstream.h">
+      <Filter>THEngine\json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\json\encodings.h">
+      <Filter>THEngine\json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\json\filereadstream.h">
+      <Filter>THEngine\json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\json\filestream.h">
+      <Filter>THEngine\json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\json\filewritestream.h">
+      <Filter>THEngine\json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\json\memorybuffer.h">
+      <Filter>THEngine\json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\json\memorystream.h">
+      <Filter>THEngine\json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\json\prettywriter.h">
+      <Filter>THEngine\json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\json\rapidjson.h">
+      <Filter>THEngine\json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\json\reader.h">
+      <Filter>THEngine\json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\json\stringbuffer.h">
+      <Filter>THEngine\json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\json\writer.h">
+      <Filter>THEngine\json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\json\error\en.h">
+      <Filter>THEngine\json\error</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\json\error\error.h">
+      <Filter>THEngine\json\error</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\json\internal\biginteger.h">
+      <Filter>THEngine\json\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\json\internal\diyfp.h">
+      <Filter>THEngine\json\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\json\internal\dtoa.h">
+      <Filter>THEngine\json\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\json\internal\ieee754.h">
+      <Filter>THEngine\json\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\json\internal\itoa.h">
+      <Filter>THEngine\json\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\json\internal\meta.h">
+      <Filter>THEngine\json\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\json\internal\pow10.h">
+      <Filter>THEngine\json\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\json\internal\stack.h">
+      <Filter>THEngine\json\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\json\internal\strfunc.h">
+      <Filter>THEngine\json\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\json\internal\strtod.h">
+      <Filter>THEngine\json\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\json\msinttypes\inttypes.h">
+      <Filter>THEngine\json\msinttypes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\json\msinttypes\stdint.h">
+      <Filter>THEngine\json\msinttypes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\lua\bind\thscript_allocator.h">
+      <Filter>THEngine\lua\bind</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\lua\bind\thscript_autoreleasePool.h">
+      <Filter>THEngine\lua\bind</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\lua\bind\thscript_bind.h">
+      <Filter>THEngine\lua\bind</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\lua\bind\thscript_dec.h">
+      <Filter>THEngine\lua\bind</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\lua\bind\thscript_luaBasicConversions.h">
+      <Filter>THEngine\lua\bind</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\lua\bind\thscript_luaEngine.h">
+      <Filter>THEngine\lua\bind</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\lua\bind\thscript_luaStack.h">
+      <Filter>THEngine\lua\bind</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\lua\bind\thscript_luaValue.h">
+      <Filter>THEngine\lua\bind</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\lua\bind\thscript_objref.h">
+      <Filter>THEngine\lua\bind</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\lua\bind\thscript_toluafix.h">
+      <Filter>THEngine\lua\bind</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\lua\bind\thscript_value.h">
+      <Filter>THEngine\lua\bind</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\lua\lua\lapi.h">
+      <Filter>THEngine\lua\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\lua\lua\lauxlib.h">
+      <Filter>THEngine\lua\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\lua\lua\lcode.h">
+      <Filter>THEngine\lua\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\lua\lua\ldebug.h">
+      <Filter>THEngine\lua\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\lua\lua\ldo.h">
+      <Filter>THEngine\lua\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\lua\lua\lfunc.h">
+      <Filter>THEngine\lua\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\lua\lua\lgc.h">
+      <Filter>THEngine\lua\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\lua\lua\llex.h">
+      <Filter>THEngine\lua\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\lua\lua\llimits.h">
+      <Filter>THEngine\lua\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\lua\lua\lmem.h">
+      <Filter>THEngine\lua\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\lua\lua\lobject.h">
+      <Filter>THEngine\lua\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\lua\lua\lopcodes.h">
+      <Filter>THEngine\lua\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\lua\lua\lparser.h">
+      <Filter>THEngine\lua\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\lua\lua\lstate.h">
+      <Filter>THEngine\lua\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\lua\lua\lstring.h">
+      <Filter>THEngine\lua\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\lua\lua\ltable.h">
+      <Filter>THEngine\lua\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\lua\lua\ltm.h">
+      <Filter>THEngine\lua\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\lua\lua\lua.h">
+      <Filter>THEngine\lua\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\lua\lua\luaconf.h">
+      <Filter>THEngine\lua\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\lua\lua\lualib.h">
+      <Filter>THEngine\lua\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\lua\lua\lundump.h">
+      <Filter>THEngine\lua\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\lua\lua\lvm.h">
+      <Filter>THEngine\lua\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\lua\lua\lzio.h">
+      <Filter>THEngine\lua\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\lua\tolua\tolua_event.h">
+      <Filter>THEngine\lua\tolua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\lua\tolua\tolua++.h">
+      <Filter>THEngine\lua\tolua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\lua\xxtea\xxtea.h">
+      <Filter>THEngine\lua\xxtea</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\vld\vld.h">
+      <Filter>THEngine\vld</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\vld\vldapi.h">
+      <Filter>THEngine\vld</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\thread\thServiceThread.h">
+      <Filter>THEngine\thread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\drawtext.h">
+      <Filter>THEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\IDXDefines.h">
+      <Filter>THEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\SkinPPWTL.h">
+      <Filter>THEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\thCaiPiao.h">
+      <Filter>THEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\THDefine.h">
+      <Filter>THEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\thHelper.h">
+      <Filter>THEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\thStruct.h">
+      <Filter>THEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\thUtility.h">
+      <Filter>THEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\lua\cjson\fpconv.h">
+      <Filter>THEngine\lua\cjson</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\lua\cjson\lua_cjson.h">
+      <Filter>THEngine\lua\cjson</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\lua\cjson\strbuf.h">
+      <Filter>THEngine\lua\cjson</Filter>
+    </ClInclude>
+    <ClInclude Include="COCX.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\web\explorer_url1.h">
+      <Filter>THEngine\web</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\mfc\thMFCListCtrl.h">
+      <Filter>THEngine\mfc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\mfc\thMFCHeader.h">
+      <Filter>THEngine\mfc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\mfc\thMFCManager.h">
+      <Filter>THEngine\mfc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\mfc\thMFCStatic.h">
+      <Filter>THEngine\mfc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\mfc\thMFCComboBox.h">
+      <Filter>THEngine\mfc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\mfc\thMFCEdit.h">
+      <Filter>THEngine\mfc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\THEngine\http\thHttpManage.h">
+      <Filter>THEngine\http</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="MFCAppCP.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MFCAppCPDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\http\HttpClient.cpp">
+      <Filter>THEngine\http</Filter>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\http\HttpCookie.cpp">
+      <Filter>THEngine\http</Filter>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\lua\bind\thscript_allocator.cpp">
+      <Filter>THEngine\lua\bind</Filter>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\lua\bind\thscript_autoreleasePool.cpp">
+      <Filter>THEngine\lua\bind</Filter>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\lua\bind\thscript_dec.cpp">
+      <Filter>THEngine\lua\bind</Filter>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\lua\bind\thscript_luaBasicConversions.cpp">
+      <Filter>THEngine\lua\bind</Filter>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\lua\bind\thscript_luaEngine.cpp">
+      <Filter>THEngine\lua\bind</Filter>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\lua\bind\thscript_luaStack.cpp">
+      <Filter>THEngine\lua\bind</Filter>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\lua\bind\thscript_luaValue.cpp">
+      <Filter>THEngine\lua\bind</Filter>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\lua\bind\thscript_objref.cpp">
+      <Filter>THEngine\lua\bind</Filter>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\lua\bind\thscript_toluafix.cpp">
+      <Filter>THEngine\lua\bind</Filter>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\lua\bind\thscript_value.cpp">
+      <Filter>THEngine\lua\bind</Filter>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\lua\lua\lapi.cpp">
+      <Filter>THEngine\lua\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\lua\lua\lauxlib.cpp">
+      <Filter>THEngine\lua\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\lua\lua\lbaselib.cpp">
+      <Filter>THEngine\lua\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\lua\lua\lcode.cpp">
+      <Filter>THEngine\lua\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\lua\lua\ldblib.cpp">
+      <Filter>THEngine\lua\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\lua\lua\ldebug.cpp">
+      <Filter>THEngine\lua\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\lua\lua\ldo.cpp">
+      <Filter>THEngine\lua\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\lua\lua\ldump.cpp">
+      <Filter>THEngine\lua\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\lua\lua\lfunc.cpp">
+      <Filter>THEngine\lua\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\lua\lua\lgc.cpp">
+      <Filter>THEngine\lua\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\lua\lua\linit.cpp">
+      <Filter>THEngine\lua\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\lua\lua\liolib.cpp">
+      <Filter>THEngine\lua\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\lua\lua\llex.cpp">
+      <Filter>THEngine\lua\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\lua\lua\lmathlib.cpp">
+      <Filter>THEngine\lua\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\lua\lua\lmem.cpp">
+      <Filter>THEngine\lua\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\lua\lua\loadlib.cpp">
+      <Filter>THEngine\lua\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\lua\lua\lobject.cpp">
+      <Filter>THEngine\lua\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\lua\lua\lopcodes.cpp">
+      <Filter>THEngine\lua\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\lua\lua\loslib.cpp">
+      <Filter>THEngine\lua\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\lua\lua\lparser.cpp">
+      <Filter>THEngine\lua\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\lua\lua\lstate.cpp">
+      <Filter>THEngine\lua\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\lua\lua\lstring.cpp">
+      <Filter>THEngine\lua\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\lua\lua\lstrlib.cpp">
+      <Filter>THEngine\lua\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\lua\lua\ltable.cpp">
+      <Filter>THEngine\lua\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\lua\lua\ltablib.cpp">
+      <Filter>THEngine\lua\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\lua\lua\ltm.cpp">
+      <Filter>THEngine\lua\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\lua\lua\lua.cpp">
+      <Filter>THEngine\lua\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\lua\lua\lundump.cpp">
+      <Filter>THEngine\lua\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\lua\lua\lvm.cpp">
+      <Filter>THEngine\lua\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\lua\lua\lzio.cpp">
+      <Filter>THEngine\lua\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\lua\lua\print.cpp">
+      <Filter>THEngine\lua\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\lua\tolua\tolua_event.cpp">
+      <Filter>THEngine\lua\tolua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\lua\tolua\tolua_is.cpp">
+      <Filter>THEngine\lua\tolua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\lua\tolua\tolua_map.cpp">
+      <Filter>THEngine\lua\tolua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\lua\tolua\tolua_push.cpp">
+      <Filter>THEngine\lua\tolua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\lua\tolua\tolua_to.cpp">
+      <Filter>THEngine\lua\tolua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\lua\xxtea\xxtea.cpp">
+      <Filter>THEngine\lua\xxtea</Filter>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\thread\thServiceThread.cpp">
+      <Filter>THEngine\thread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\drawtext.cpp">
+      <Filter>THEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\thCaiPiao.cpp">
+      <Filter>THEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\thHelper.cpp">
+      <Filter>THEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\lua\cjson\fpconv.cpp">
+      <Filter>THEngine\lua\cjson</Filter>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\lua\cjson\lua_cjson.cpp">
+      <Filter>THEngine\lua\cjson</Filter>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\lua\cjson\strbuf.cpp">
+      <Filter>THEngine\lua\cjson</Filter>
+    </ClCompile>
+    <ClCompile Include="COCX.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\web\explorer_url1.cpp">
+      <Filter>THEngine\web</Filter>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\mfc\thMFCListCtrl.cpp">
+      <Filter>THEngine\mfc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\mfc\thMFCManager.cpp">
+      <Filter>THEngine\mfc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\mfc\thMFCStatic.cpp">
+      <Filter>THEngine\mfc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\mfc\thMFCComboBox.cpp">
+      <Filter>THEngine\mfc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\mfc\thMFCEdit.cpp">
+      <Filter>THEngine\mfc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\THEngine\http\thHttpManage.cpp">
+      <Filter>THEngine\http</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="MFCAppCP.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\MFCAppCP.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="..\THEngine\lua\bind\thscript_bind.inl">
+      <Filter>THEngine\lua\bind</Filter>
+    </None>
+    <None Include="..\THEngine\http\curl\Makefile.am">
+      <Filter>THEngine\http\curl</Filter>
+    </None>
+    <None Include="..\THEngine\http\curl\Makefile.in">
+      <Filter>THEngine\http\curl</Filter>
+    </None>
+    <None Include="..\THEngine\thUtility.inl">
+      <Filter>THEngine</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\MFCAppCP.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
