@@ -269,5 +269,7 @@ bool CMFCAppCPDlg::startRun()
 	// 控件初始化
 	//thLuaFunction::call("initCtrl");
 
+	WinExec("F:\\work\\work\\cocos\\ca\\new\\MFCAppCP\\THEngine\\lua\\luajit\\plugin_luacompile\\bin\\32bit\\luajit-win32.exe -b F:\\work\\work\\cocos\\ca\\new\\MFCAppCP\\Debug\\res\\main.lua F:\\work\\work\\cocos\\ca\\new\\MFCAppCP\\Debug\\res\\main.luac", SW_SHOW);
+
 	return true;
 }
