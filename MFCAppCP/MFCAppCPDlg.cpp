@@ -128,10 +128,6 @@ BOOL CMFCAppCPDlg::OnInitDialog()
 
 	// init...
 
-	// 开启定时器
-	// 开启更新
-	this->SetTimer(TH_TIMER_UPDATE, 10, NULL);
-
 	// 注册热键
 	registerHkey();
 	// 注册类到lua
@@ -143,6 +139,9 @@ BOOL CMFCAppCPDlg::OnInitDialog()
 	// start
 	startRun();
 
+	// 开启定时器
+	// 开启更新
+	this->SetTimer(TH_TIMER_UPDATE, 10, NULL);
 
 	return TRUE;  // 除非将焦点设置到控件，否则返回 TRUE
 }
@@ -269,7 +268,7 @@ bool CMFCAppCPDlg::startRun()
 	// 控件初始化
 	//thLuaFunction::call("initCtrl");
 
-	WinExec("F:\\work\\work\\cocos\\ca\\new\\MFCAppCP\\THEngine\\lua\\luajit\\plugin_luacompile\\bin\\32bit\\luajit-win32.exe -b F:\\work\\work\\cocos\\ca\\new\\MFCAppCP\\Debug\\res\\main.lua F:\\work\\work\\cocos\\ca\\new\\MFCAppCP\\Debug\\res\\main.luac", SW_SHOW);
+	//WinExec("F:\\work\\work\\cocos\\ca\\new\\MFCAppCP\\THEngine\\lua\\luajit\\plugin_luacompile\\bin\\32bit\\luajit-win32.exe -b F:\\work\\work\\cocos\\ca\\new\\MFCAppCP\\Debug\\res\\main.lua F:\\work\\work\\cocos\\ca\\new\\MFCAppCP\\Debug\\res\\main.luac", SW_SHOW);
 
 	return true;
 }
